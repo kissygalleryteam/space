@@ -1,0 +1,17 @@
+{
+    "name": "space",
+    "comName":"Space",
+    "version": "1.0",
+    "desc": "",
+    "tag":"二维,2D,透视,空间,视差",
+    "githubName":"height",
+    "author": {
+        "name": "Linkjun",
+        "email": "pk.link@163.com",
+        "page": ""
+    },
+	"flexComboPort":"81",
+	"reserveServerPort":"8080",
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
