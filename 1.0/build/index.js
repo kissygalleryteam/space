@@ -16,12 +16,6 @@ gallery/space/1.0/index
 KISSY.add('gallery/space/1.0/index',function (S, Node, Base, DOM, Event) {
     var EMPTY = '';
     var $ = Node.all;
-    /**
-     * 
-     * @class Space
-     * @constructor
-     * @extends Base
-     */
     function Space(comConfig) {
         var t = this;
         //调用父类构造函数
@@ -164,15 +158,6 @@ KISSY.add('gallery/space/1.0/index',function (S, Node, Base, DOM, Event) {
                 tiers[i].style.top = Math.floor(t.tiersOffset[i].top + bias.top * t.tiersRange[i].top) + 'px';
                 tiers[i].style.left = Math.floor(t.tiersOffset[i].left + bias.left * t.tiersRange[i].left) + 'px';
             };
-        },
-        /*
-            Array remove
-        */
-        __remove : function(array, from, to){
-            var rest = array.slice((to || from) + 1 || array.length);
-            array.length = from < 0 ? array.length + from : from;
-
-            return array.push.apply(array, rest);
         },
         init : function(_config){
             var
