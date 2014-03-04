@@ -11,12 +11,14 @@ Space是简单的一个2D空间感透视效果组件，与 GitHub 404页面效�
 	<div class="J_space">
 		<div class="space-tier" data-rangex="40" data-rangey="-20"></div>
 	</div>
-	
-	var space = new Space({
-	    contianer : S.get('.J_space'),//{Element}
-	    tiers : S.query('.space-tier','.J_space') //{NodeList}
-	});
-
+	<script>
+		KISSY.use('gallery/space/1.0/index', function (S, Space) {
+			var space = new Space({
+	    		contianer : S.get('.J_space'),//{Element}
+	    		tiers : S.query('.space-tier','.J_space') //{NodeList}
+			});
+		});
+	</script>
 ## API说明
 
 ### 参数
