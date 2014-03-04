@@ -1,3 +1,9 @@
+/*
+combined files : 
+
+gallery/space/1.0/index
+
+*/
 /**
  * @name 空间分层效果 
  * @author Linkjun<pk.link@163.com>
@@ -6,7 +12,7 @@
         根据鼠标移动范围修改元素所该有的位置,
         因为大多数使用场景中，被分层的均为图片元素，无必要缩放元素透视效果
  **/
-KISSY.add(function (S, Node, Base, DOM, Event) {
+KISSY.add('gallery/space/1.0/index',function (S, Node, Base, DOM, Event) {
     var EMPTY = '';
     var $ = Node.all;
     /**
@@ -184,6 +190,7 @@ KISSY.add(function (S, Node, Base, DOM, Event) {
     }});
     return Space;
 }, {requires:['node', 'base', 'dom', 'event']});
+
 
 
 
