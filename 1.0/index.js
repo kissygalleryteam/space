@@ -3,6 +3,7 @@
  * @author Linkjun<pk.link@163.com>
  * @module space
  * @description :
+        2d space perspective effect
         根据鼠标移动范围修改元素所该有的位置,
         因为大多数使用场景中，被分层的均为图片元素，无必要缩放元素透视效果
  **/
