@@ -15,7 +15,7 @@ Space是简单的一个2D空间感透视效果组件，与 GitHub 404页面效�
 	<script>
 		KISSY.use('gallery/space/1.0/index', function (S, Space) {
 			var space = new Space({
-	    		contianer : S.get('.J_space'),//{Element}
+	    		container : S.get('.J_space'),//{Element}
 	    		tiers : S.query('.space-tier','.J_space') //{NodeList}
 			});
 		});
@@ -24,7 +24,7 @@ Space是简单的一个2D空间感透视效果组件，与 GitHub 404页面效�
 
 ### 参数
 
-*contianer* {Element}
+*container* {Element}
 
 鼠标事件侦听的容器，必填
 

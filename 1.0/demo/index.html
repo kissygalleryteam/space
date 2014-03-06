@@ -46,16 +46,17 @@
 
     S.use('gallery/space/1.0/index', function (S, Space) {
         var 
+        spaceEl = S.get('.J_spaceWrap'),
         tiersEl = S.query('.space-tier','.J_tierWrap'),
         titleEl = S.query('.J_tierTitle');
 
         var title = new Space({
-            contianer : S.get('.J_spaceWrap'),
+            container : spaceEl,
             tiers : titleEl
         });
 
         var space = new Space({
-            contianer : S.get('.J_spaceWrap'),
+            container : spaceEl,
             tiers : tiersEl
         });
         //暂停对当前实例的侦听 
