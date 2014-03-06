@@ -2,13 +2,13 @@
     "name": "space",
     "comName":"Space",
     "version": "1.0",
-    "desc": "",
+    "desc": "Space是简单的动画效果组件，快速使用2D元素营造空间感透视效果。",
     "tag":"二维,2D,透视,空间,视差",
     "githubName":"height",
     "author": {
         "name": "Linkjun",
         "email": "pk.link@163.com",
-        "page": ""
+        "page": "http://linkjun.com"
     },
 	"flexComboPort":"81",
 	"reserveServerPort":"8080",

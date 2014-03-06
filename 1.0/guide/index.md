@@ -1,6 +1,6 @@
 ## space
 
-Space是简单的一个2D空间感透视效果组件，与 GitHub 404页面效果类似。
+Space是简单的动画效果组件，`快速使用2D元素营造空间感透视效果`。与 GitHub 404页面效果类似。与 GitHub 404页面效果类似。
 
 * 版本：1.0
 * 作者：Linkjun | 旺旺：[连延卿](http://www.taobao.com/webww/ww.php?ver=3&touid=%E8%BF%9E%E5%BB%B6%E5%8D%BF&siteid=cntaobao&status=1&charset=utf-8)
