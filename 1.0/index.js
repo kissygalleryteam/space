@@ -26,7 +26,7 @@ KISSY.add(function (S, Node, Base, DOM, Event) {
             t = this;
 
             if(t.__mouseMoveEvent != null){
-                S.Event.detach(t.contianer,'mousemove',t.__mouseMoveEvent);
+                S.Event.detach(t.container,'mousemove',t.__mouseMoveEvent);
                 t.__mouseMoveEvent = null;
 
                 return t;
@@ -50,7 +50,7 @@ KISSY.add(function (S, Node, Base, DOM, Event) {
                     t.__tiersWalk(e);
 
                 }
-                S.Event.on(t.contianer,'mousemove',t.__mouseMoveEvent);
+                S.Event.on(t.container,'mousemove',t.__mouseMoveEvent);
                 return t;
             }else{
                 return false;
@@ -118,9 +118,9 @@ KISSY.add(function (S, Node, Base, DOM, Event) {
             //元素的层级幅度存档
             t.tiersRange = [];
             //容器的宽度
-            t.contianerSize = {
-                width : DOM.innerWidth(t.contianer),
-                height : DOM.innerHeight(t.contianer)
+            t.containerSize = {
+                width : DOM.innerWidth(t.container),
+                height : DOM.innerHeight(t.container)
             };
 
             for (var i = 0 ; i < len; i++) {
@@ -144,8 +144,8 @@ KISSY.add(function (S, Node, Base, DOM, Event) {
             tiers = t.tiers,
             len = tiers.length,
             bias = {
-                top : e.pageY / t.contianerSize.height - .5,
-                left : e.pageX / t.contianerSize.width - .5
+                top : e.pageY / t.containerSize.height - .5,
+                left : e.pageX / t.containerSize.width - .5
             };//实时算出鼠标在容器中的偏移 百分比-小数
             
             for (var i = 0 ; i < len; i++) {
@@ -158,12 +158,12 @@ KISSY.add(function (S, Node, Base, DOM, Event) {
             t = this;
 
             t.tiers = _config.tiers;
-            t.contianer = _config.contianer;
+            t.container = _config.container;
             //记录最原始的坐标
             t.__recordTiersOffset();
             
             //bind Event
-            t.play(t.contianer);
+            t.play(t.container);
         }
     }, {ATTRS : /** @lends Space*/{
 
