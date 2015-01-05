@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Space : 2d space perspective effect">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Space</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/kissygalleryteam/space">View on GitHub</a>
+
+          <h1 id="project_title">Space</h1>
+          <h2 id="project_tagline">2d space perspective effect</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/kissygalleryteam/space/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/kissygalleryteam/space/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="space" class="anchor" href="#space" aria-hidden="true"><span class="octicon octicon-link"></span></a>space</h2>
+
+<p>Space是简单的动画效果组件，<code>快速使用2D元素营造空间感透视效果</code>。与 GitHub 404页面效果类似。</p>
+
+<ul>
+<li>版本：1.0</li>
+<li>作者：Linkjun | 旺旺：<a href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=%E8%BF%9E%E5%BB%B6%E5%8D%BF&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8">连延卿</a>
+</li>
+<li>教程：<a href="http://gallery.kissyui.com/space/1.0/guide/index.html">http://gallery.kissyui.com/space/1.0/guide/index.html</a>
+</li>
+<li>demo：<a href="http://gallery.kissyui.com/space/1.0/demo/index.html">http://gallery.kissyui.com/space/1.0/demo/index.html</a>
+</li>
+</ul>
+
+<h2>
+<a id="初始化组件" class="anchor" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>初始化组件</h2>
+
+<pre><code>&lt;div class="J_space"&gt;
+    &lt;div class="space-tier" data-rangex="40" data-rangey="-20"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    KISSY.use('gallery/space/1.0/index', function (S, Space) {
+        var space = new Space({
+            container : S.get('.J_space'),//{Element}
+            tiers : S.query('.space-tier','.J_space') //{NodeList}
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+
+<h2>
+<a id="api说明" class="anchor" href="#api%E8%AF%B4%E6%98%8E" aria-hidden="true"><span class="octicon octicon-link"></span></a>API说明</h2>
+
+<h3>
+<a id="参数" class="anchor" href="#%E5%8F%82%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>参数</h3>
+
+<p><em>container</em> {Element}</p>
+
+<p>鼠标事件侦听的容器，必填</p>
+
+<p><em>tiers</em> {Array}</p>
+
+<p>需要实时变换坐标的层元素， 注：每个Element需要添加两个属性</p>
+
+<p>data-rangex="30"; //鼠标横向范围响应值（正数:与鼠标同向,负数:与鼠标逆向）</p>
+
+<p>data-rangey="-20"; //鼠标纵向范围响应值（正数:与鼠标同向,负数:与鼠标逆向）</p>
+
+<h3>
+<a id="方法" class="anchor" href="#%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>方法</h3>
+
+<p><em>play</em> (null)</p>
+
+<p>继续对当前实例的侦听</p>
+
+<p><em>stop</em> (null)</p>
+
+<p>暂停对当前实例的侦听</p>
+
+<p><em>add</em> (Element)</p>
+
+<p>向当前实例中添加一个层元素</p>
+
+<p><em>kill</em> (Element)</p>
+
+<p>删除当前实例中的一个层元素</p>
+
+<p><em>killAll</em> (null)</p>
+
+<p>清空space中的所有层元素</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Space maintained by <a href="https://github.com/kissygalleryteam">kissygalleryteam</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
