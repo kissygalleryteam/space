@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>space</title>
+    <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com-prettify.css">
+    <link rel="stylesheet" href="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com.css">
+    <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.8/seed-min.js" data-config="{combine:true}"></script>
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <div id="header"><a href="http://docs.kissyui.com/" class="logo">kissy</a>
+      <nav><a href="http://docs.kissyui.com/1.4/docs/html/coms.html">优秀组件推荐</a></nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar">
+          <ul data-spy="affix" data-offset-top="0" class="nav nav-list bs-docs-sidenav"></ul>
+        </div>
+        <div class="span9 bs-docs-content">
+          <h1 data-id="undefined" class="title">space</h1>
+          <p class="author-wrapper"><span>组件有问题？旺旺联系作者：</span><a href="https://github.com/height" target="_blank" data-name="Linkjun" class="author"><img src="https://avatars.githubusercontent.com/u/1542746?v=2&amp;s=60" alt="Linkjun"></a><span class="author-name">Linkjun</span>
+          </p>
+          <div class="common-link"><a href="../demo/index.html" target="_blank" class="demo">示例</a><a href="https://github.com/kissygalleryteam/space" target="_blank" class="source">源码</a></div>
+          <p class="com-info"><span class="info-label">View</span><span data-com="space" class="J_View">609</span></p>
+          <p class="com-info"><span class="info-label">所属分类</span><a href="http://kpm.taobao.net/list/动画&amp;效果">动画&amp;效果</a>
+          </p>
+          <p class="com-info"><span class="info-label">kissy版本</span><span>1.4.X</span>
+          </p><h2 id="space">space</h2>
+<p>Space是简单的动画效果组件，<code>快速使用2D元素营造空间感透视效果</code>。与 GitHub 404页面效果类似。与 GitHub 404页面效果类似。</p>
+<ul>
+<li>版本：2.0.0</li>
+<li>作者：Linkjun | 旺旺：<a href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=%E8%BF%9E%E5%BB%B6%E5%8D%BF&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8">连延卿</a></li>
+<li>demo：<a href="http://kg.kissyui.com/space/2.0.0/demo/index.html">http://kg.kissyui.com/space/2.0.0/demo/index.html</a></li>
+</ul>
+<h2 id="-">初始化组件</h2>
+<pre><code>&lt;div class=&quot;J_space&quot;&gt;
+    &lt;div class=&quot;space-tier&quot; data-rangex=&quot;40&quot; data-rangey=&quot;-20&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    KISSY.use(&#39;kg/space/2.0.0/index&#39;, function (S, Space) {
+        var space = new Space({
+            container : S.get(&#39;.J_space&#39;),//{Element}
+            tiers : S.query(&#39;.space-tier&#39;,&#39;.J_space&#39;) //{NodeList}
+        });
+    });
+&lt;/script&gt;
+</code></pre><h2 id="api-">API说明</h2>
+<h3 id="-">参数</h3>
+<p><em>container</em> {Element}</p>
+<p>鼠标事件侦听的容器，必填</p>
+<p><em>tiers</em> {Array}</p>
+<p>需要实时变换坐标的层元素， 注：每个Element需要添加两个属性</p>
+<p>data-rangex=&quot;30&quot;; //鼠标横向范围响应值（正数:与鼠标同向,负数:与鼠标逆向）</p>
+<p>data-rangey=&quot;-20&quot;; //鼠标纵向范围响应值（正数:与鼠标同向,负数:与鼠标逆向）</p>
+<h3 id="-">方法</h3>
+<p><em>play</em> (null)</p>
+<p>继续对当前实例的侦听</p>
+<p><em>stop</em> (null)</p>
+<p>暂停对当前实例的侦听</p>
+<p><em>add</em> (Element)</p>
+<p>向当前实例中添加一个层元素</p>
+<p><em>kill</em> (Element)</p>
+<p>删除当前实例中的一个层元素</p>
+<p><em>killAll</em> (null)</p>
+<p>清空space中的所有层元素</p>
+
+          <div style="display:none;"><script type="text/javascript" src="http://tajs.qq.com/stats?sId=36378479" charset="UTF-8"></script></div>
+          <script src="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
